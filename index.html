@@ -71,8 +71,37 @@
           </div>
         </div>
       </section>
-      <!-- WAITLIST -->
-      <section id="waitlist" class="py-20 bg-slate-900/80">
+
+      <!-- ABOUT AIEO -->
+      <section class="py-20 bg-slate-900/80" id="about">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">About AIEO</h2>
+          <p class="text-white/70 max-w-3xl mx-auto mb-10">
+            <span class="font-semibold">Artificial Intelligence Engine Optimization</span> is an AI-powered marketing tool designed to boost your organic growth and adapt your strategy for the AI era.
+          </p>
+          <div class="grid md:grid-cols-2 gap-8 text-left">
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur">
+              <h3 class="text-xl font-semibold mb-3">AI Market Penetration</h3>
+              <p class="text-white/70 text-sm">The new battlefield is inside LLM-generated answers (ChatGPT, Claude, Grok, etc.)—we position your business to be discovered there.</p>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur">
+              <h3 class="text-xl font-semibold mb-3">High-Converting Leads</h3>
+              <p class="text-white/70 text-sm">We help your service craft strategies that fish for quality leads ready to convert.</p>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur">
+              <h3 class="text-xl font-semibold mb-3">Social Media Commentator</h3>
+              <p class="text-white/70 text-sm">Our AI backend finds relevant posts and recommends your product in authentic, context-aware comments.</p>
+            </div>
+            <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur">
+              <h3 class="text-xl font-semibold mb-3">Content & SEO Engine</h3>
+              <p class="text-white/70 text-sm">Daily scans of your business portfolio keep FAQs updated, blogs fresh, and your authority rising.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="waitlist" class="py-20">
         <div class="max-w-3xl mx-auto px-6 text-center">
           <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
           <p class="text-white/70 mb-10">Be first to unlock AI-native marketing workflows and own the answers customers trust.</p>
@@ -88,7 +117,7 @@
               </label>
             </div>
             <button type="submit" class="w-full inline-flex justify-center items-center gap-2 px-6 py-3 text-base font-semibold bg-indigo-500 hover:bg-indigo-400 text-white rounded-full transition">Send</button>
-            <p id="form-status" class="text-sm text-emerald-400 hidden">Thank you! You&apos;re on the list. We&apos;ll be in touch soon.</p>
+            <p id="form-status" class="text-sm text-emerald-400 hidden">Thank you! We’ll be in touch soon.</p>
           </form>
         </div>
       </section>
@@ -125,7 +154,7 @@
         if (response.ok) {
           form.reset();
           statusEl.classList.remove('hidden');
-          statusEl.textContent = "Thank you! You're on the list. We'll be in touch soon.";
+          statusEl.textContent = "Thank you! We’ll be in touch soon.";
         } else {
           statusEl.classList.remove('hidden');
           statusEl.classList.replace('text-emerald-400', 'text-amber-400');
